@@ -1,6 +1,6 @@
 # Sneaker-Price-Predictor
 
-A program where it will predict of prices of reselling sneakers in the future. It will be based on 4 factors: Demand and supply, Name, Design of sneaker and Price
+A program where it will predict of prices of reselling sneakers in the future. It will be based on 4 factors: Demand and supply, Name, Design of sneaker and Price.
 
 <h2>Stages of development</h2>
 
