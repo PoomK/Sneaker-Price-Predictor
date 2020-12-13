@@ -25,7 +25,7 @@ A program where it will predict of prices of reselling sneakers in the future. I
 <h3>Sneaker Name and Wording</h3>
 
 - Splitting the names of shoes based on data and storing every word into a set (similar to array but without repetition)
-    - For example, set = ("Air", "Jordan", "Force)
+    - For example, set = ("Air", "Jordan", "Force")
 - Once set has been created, create array for each sneakers, with value for 1 if it contains that word and 0 if it does not. This would be stored as a NumPy array
     - For example, using a set above, a shoe called "Air Jordan" would be (1,1,0) and a shoe called "Air Force" would be (1,0,1)
 - After creating arrays, create model to interpret each value to predict a price of the sneaker.
