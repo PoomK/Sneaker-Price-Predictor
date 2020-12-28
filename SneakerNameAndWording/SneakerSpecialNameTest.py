@@ -1,4 +1,4 @@
-SpecialNameArr = ["Jordan 1 Retro High","Yeezy Boost 350 V2","Jordan 1 Mid","Nike Air Force 1"]
+specialNames = ["Jordan 1 Retro High","Yeezy Boost 350 V2","Jordan 1 Mid","Nike Air Force 1"]
 yeezyBredName = "adidas Yeezy Boost 350 V2 Black Red (2017/2020)"
 
 def strip(s):
