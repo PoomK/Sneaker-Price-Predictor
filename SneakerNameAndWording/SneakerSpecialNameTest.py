@@ -13,16 +13,6 @@ def splitSpecial(sneakerName):
             nameArray.insert(1, s)
             nameArray = list(map(strip, nameArray))
 
-            #Check for space in 1st element and split if there is space
-            if "" in nameArray[0]:
-                element1 = nameArray[0]
-                del nameArray[0]
-                newArr1 = element1.split()
-                for i in range(len(newArr1)):
-                    position1 = i
-                    value1 = newArr1[i]
-                    nameArray.insert(position1,value1)
-
             #Check for space in 3rd element and split if there is space
             if "" in nameArray[2]:
                 element2 = nameArray[2]
@@ -32,6 +22,16 @@ def splitSpecial(sneakerName):
                     position2 = 2+i
                     value2 = newArr2[i]
                     nameArray.insert(position2,value2)
+
+            #Check for space in 1st element and split if there is space
+            if "" in nameArray[0]:
+                element1 = nameArray[0]
+                del nameArray[0]
+                newArr1 = element1.split()
+                for i in range(len(newArr1)):
+                    position1 = i
+                    value1 = newArr1[i]
+                    nameArray.insert(position1,value1)
 
             return nameArray
     return sneakerName
