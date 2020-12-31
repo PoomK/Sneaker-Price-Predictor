@@ -1,5 +1,6 @@
 specialNames = ["Jordan 1 Retro High","Yeezy Boost 350 V2","Jordan 1 Mid","Nike Air Force 1"]
 yeezyBredName = "adidas Yeezy Boost 350 V2 Black Red (2017/2020)"
+AirJordan1Name = "Jordan 1 Retro High Dark Mocha"
 
 def strip(s):
     return s.strip()
@@ -36,5 +37,5 @@ def splitSpecial(sneakerName):
             return nameArray
     return sneakerName
 
-a = splitSpecial(yeezyBredName)
+a = splitSpecial(AirJordan1Name)
 print(a)
