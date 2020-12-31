@@ -18,11 +18,23 @@ driver.get("https://stockx.com/sneakers")
 driver.implicitly_wait(10)
 PopUpQuitButton = driver.find_element_by_xpath("//img[@src='//stockx-assets.imgix.net/AllInAsk/close (1).svg?auto=compress,format']").click()
 
-#Click on the first sneaker
-SneakerSelect = driver.find_element_by_xpath("//div[@class='tile css-1bonzt1 e1yt6rrx0'][1]").click()
+SneakerNameArr = []
 
-#Get the sneaker name and store words into array
-SneakerName1 = driver.find_element_by_xpath("//h1[@data-testid='product-name']").text
-print(SneakerName1)
-SneakerNameWordsArr = SneakerName1.split(" ")
-print(SneakerNameWordsArr)
+'''SneakerSelect = driver.find_element_by_xpath("//div[@class='tile browse-tile updated'][2]").click()
+SneakerName = driver.find_element_by_xpath("//h1[@data-testid='product-name']").text
+print(SneakerName)'''
+
+for i in range(2):
+
+    #Click on the first sneaker
+    xpathstr = "//div[@class='tile browse-tile updated']["+str(i+1)+"]"
+    SneakerSelect = driver.find_element_by_xpath(xpathstr).click()
+
+    #Get the sneaker name and store words into array
+    SneakerName = driver.find_element_by_xpath("//h1[@data-testid='product-name']").text
+    SneakerNameArr.append(SneakerName)
+
+    driver.back()
+    driver.refresh()
+
+print(SneakerNameArr)
