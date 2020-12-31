@@ -39,4 +39,5 @@ for i in range(5):
     driver.back()
     driver.refresh()
 
+#Printing array
 print(SneakerNameArr)
