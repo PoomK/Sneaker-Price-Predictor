@@ -24,16 +24,18 @@ SneakerNameArr = []
 SneakerName = driver.find_element_by_xpath("//h1[@data-testid='product-name']").text
 print(SneakerName)'''
 
+#For loop to loop over n amount of pairs and extract sneaker name and append to sneakernamearr array
 for i in range(2):
 
-    #Click on the first sneaker
+    #Click on the i + 1 sneaker
     xpathstr = "//div[@class='tile browse-tile updated']["+str(i+1)+"]"
     SneakerSelect = driver.find_element_by_xpath(xpathstr).click()
 
-    #Get the sneaker name and store words into array
+    #Get the sneaker name append to array
     SneakerName = driver.find_element_by_xpath("//h1[@data-testid='product-name']").text
     SneakerNameArr.append(SneakerName)
 
+    #Return to initial page and refresh
     driver.back()
     driver.refresh()
 
