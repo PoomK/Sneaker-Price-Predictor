@@ -1,9 +1,10 @@
-SneakerSpecNameArr = []
+#Returns an array of special sneaker names
+SpecialNamesArr = []
 
 with open("SneakerSpecialNames.txt", "r") as f:
     lines = f.readlines()
     for line in lines:
         SpecialName = line.strip("\n")
-        SneakerSpecNameArr.append(SpecialName)
+        SpecialNamesArr.append(SpecialName)
 
-print(SneakerSpecNameArr)
+print(SpecialNamesArr)
