@@ -6,6 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import random
+import csv
 
 #Returns an array of special sneaker names
 SpecialNamesArr = []
@@ -82,7 +83,12 @@ for i in range(5):
 #Printing array
 print(SneakerNameArr)
 
-#Create special name array for each sneaker
+#Create special name array for each sneaker and store each array into file
 for i in range(len(SneakerNameArr)):
+
     SpecialNameResultArr = splitSpecial(SneakerNameArr[i])
     print(SpecialNameResultArr)
+
+    with open("SneakerNameArr.csv", mode = "a") as p:
+        sneakernamewriter = csv.writer(p)
+        sneakernamewriter.writerow(SpecialNameResultArr)
