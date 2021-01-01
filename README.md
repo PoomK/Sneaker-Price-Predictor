@@ -16,6 +16,7 @@ A program which will predict of prices of reselling sneakers in the future. It w
 - This is based on resell price history on websites such as StockX.
 - Model will be created to predict prices based on these data.
 - MAY NEED TO GATHER EXTRA DATA
+- Use of release date because if it has not been released, price may still be high
 
 <h3>Demand and Supply</h3>
 
