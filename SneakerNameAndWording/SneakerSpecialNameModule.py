@@ -32,3 +32,5 @@ def splitSpecial(sneakerName):
 
             return nameArray
     return sneakerName
+
+#To get special name, special name array = splitSpecial(SneakerName)

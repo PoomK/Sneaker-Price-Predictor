@@ -6,6 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import random
+import SneakerSpecialNameModule
 
 #Path to Chrome Driver for windows
 PATH = "C:\Program Files (x86)\chromedriver.exe"
