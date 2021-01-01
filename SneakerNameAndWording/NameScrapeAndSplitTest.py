@@ -90,5 +90,5 @@ for i in range(len(SneakerNameArr)):
     print(SpecialNameResultArr)
 
     with open("SneakerNameArr.csv", mode = "a") as p:
-        sneakernamewriter = csv.writer(p)
+        sneakernamewriter = csv.writer(p, lineterminator = '\r')
         sneakernamewriter.writerow(SpecialNameResultArr)
