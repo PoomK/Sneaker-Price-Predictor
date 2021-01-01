@@ -1,9 +1,11 @@
+SpecialNamesArr = ['Yeezy Boost 350 V2', 'Yeezy Boost 380', 'Yeezy Boost 700', 'Yeezy 500', 'Yeezy 700 V3', 'Yeezy QNTM', 'Ultra Boost', 'Jordan 1 Retro High', 'Jordan 1 Mid', 'Jordan 1 Low', 'Jordan 3 Retro', 'Jordan 4 Retro', 'Jordan 5 Retro', 'Jordan 6 Retro', 'Jordan 11 Retro', 'Nike Air Max 90', 'Nike Air Max 95', 'Nike Dunk High', 'Nike Dunk Low', 'Nike SB Dunk Low', 'Nike SB Dunk High', 'Nike LD Waffle Sacai', 'Nike Blazer Mid', 'Nike Air Force 1 Low', 'Fear Of God']
+
 def strip(s):
     return s.strip()
 
 def splitSpecial(sneakerName):
     #iterate through specialNames
-    for s in specialNames:
+    for s in SpecialNamesArr:
         #check if special name is in sneaker name
         if s in sneakerName:
             nameArray = sneakerName.split(s)
@@ -34,3 +36,5 @@ def splitSpecial(sneakerName):
     return sneakerName
 
 #To get special name, special name array = splitSpecial(SneakerName)
+
+print(splitSpecial("Nike Air Max 95 OG Neon (2020)"))
