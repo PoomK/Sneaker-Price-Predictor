@@ -9,7 +9,7 @@
 <h2>To Do</h2>
 
 - [x] Try to get name of one sneaker and split it into an array
-- [ ] Get multiple sneaker names and create many arrays
+- [x] Get multiple sneaker names and create many arrays
 - [ ] Create model for determing sneaker price based on certain words e.g. Off-white, Supreme, Yeezy
 - [ ] Test model
 - [ ] Improve the model
