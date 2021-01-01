@@ -1,4 +1,11 @@
-SpecialNamesArr = ['Yeezy Boost 350 V2', 'Yeezy Boost 380', 'Yeezy Boost 700', 'Yeezy 500', 'Yeezy 700 V3', 'Yeezy QNTM', 'Ultra Boost', 'Jordan 1 Retro High', 'Jordan 1 Mid', 'Jordan 1 Low', 'Jordan 3 Retro', 'Jordan 4 Retro', 'Jordan 5 Retro', 'Jordan 6 Retro', 'Jordan 11 Retro', 'Nike Air Max 90', 'Nike Air Max 95', 'Nike Dunk High', 'Nike Dunk Low', 'Nike SB Dunk Low', 'Nike SB Dunk High', 'Nike LD Waffle Sacai', 'Nike Blazer Mid', 'Nike Air Force 1 Low', 'Fear Of God']
+#Returns an array of special sneaker names
+SpecialNamesArr = []
+
+with open("SneakerSpecialNames.txt", "r") as f:
+    lines = f.readlines()
+    for line in lines:
+        SpecialName = line.strip("\n")
+        SpecialNamesArr.append(SpecialName)
 
 def strip(s):
     return s.strip()
