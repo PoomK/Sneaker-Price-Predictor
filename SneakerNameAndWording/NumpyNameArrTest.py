@@ -1,5 +1,15 @@
+import csv
+
 YzyBredArr = ["adidas", "Yeezy Boost 350 V2", "Black", "Red", "(2017/2020)"]
 Jordan1MochaArr = ["Air", "Jordan 1 Retro High", "Dark", "Mocha"]
+
+def GetSneakerNameArray():
+
+    with open("SneakerNameArr.csv", mode="r") as f:
+        reader = csv.reader(f)
+        row1 = next(reader)
+
+    return row1
 
 def GetNumpyArray(SpecificNameArr):
 
@@ -28,4 +38,6 @@ def GetNumpyArray(SpecificNameArr):
     return NumpyArr
 
 #Calling array to test
-print(GetNumpyArray(Jordan1MochaArr))
+#print(GetSneakerNameArray())
+#This allows to get numpy array from calling sneaker array
+print(GetNumpyArray(GetSneakerNameArray()))
