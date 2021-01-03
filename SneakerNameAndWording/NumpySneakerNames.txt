@@ -1,4 +1,4 @@
-Adidas
+adidas
 Yeezy Boost 350 V2
 Yeezy Boost 380
 Yeezy Boost 700
@@ -6,6 +6,7 @@ Yeezy 500
 Yeezy 700 V3
 Yeezy QNTM
 Ultra Boost
+Air
 Jordan 1 Retro High
 Jordan 1 Mid
 Jordan 1 Low
