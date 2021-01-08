@@ -1,8 +1,10 @@
 #Virtual environment: env
 from selenium import webdriver
 
+#Path to Chrome Driver for mac
+#PATH = "/applications/chromedriver"
 #Path to Chrome Driver for windows
-PATH = "/applications/chromedriver"
+PATH = "C:\Program Files (x86)\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
 
 #Open site
@@ -16,6 +18,12 @@ PopUpQuitButton = driver.find_element_by_xpath("//img[@src='//stockx-assets.imgi
 SneakerSelect = driver.find_element_by_xpath("//div[@class='tile css-1bonzt1 e1yt6rrx0'][1]").click()
 
 driver.find_element_by_xpath("//a[@data-testid='product-viewallsales']").click()
+
+while True:
+    try:
+        load_more_button = driver.find_element_by_xpath("//button[@class='button button-block button-white']").click()
+    except:
+        break
 
 table = driver.find_element_by_xpath("//table[@id='480']").text
 
