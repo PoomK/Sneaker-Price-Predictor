@@ -19,6 +19,7 @@ SneakerSelect = driver.find_element_by_xpath("//div[@class='tile css-1bonzt1 e1y
 
 driver.find_element_by_xpath("//a[@data-testid='product-viewallsales']").click()
 
+#Loop to press load more button to load full table. Breaks out of loop if no more.
 while True:
     try:
         load_more_button = driver.find_element_by_xpath("//button[@class='button button-block button-white']").click()
