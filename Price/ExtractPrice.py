@@ -15,5 +15,5 @@ def extract_date(dateString):
     return datetimeObj
 
 #Extract date tester
-'''dateString1 = "Sunday, November 12, 2017 10:03 AM"
-print(extract_date(dateString1))'''
+# dateString1 = "Sunday, November 12, 2017 10:03 AM "
+# print(extract_date(dateString1))
