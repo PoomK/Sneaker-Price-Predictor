@@ -10,4 +10,6 @@
 - [x] Create arrays and plot graph
 - [ ] Allow arrays to be created as soon as data is drawn
 - [ ] Try to let model predict price
+- [ ] Maybe try to use multiple regression so sizing can also be a factor - To do this, I would have to separate size, date and price into csv file.
+  Example: https://www.w3schools.com/python/python_ml_multiple_regression.asp
 - [ ] Merge everything to one file and allow user to search for sneaker
