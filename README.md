@@ -37,12 +37,6 @@ A program which will predict of prices of reselling sneakers in the future. It w
 - Use of CNN (Convolutional Neural Network) to decide whether the design is good or not.
 - Maybe use OpenCV, Tensor flow, PILLOW etc.
 
-<h2>Links to others who created sneaker price predictors</h2>
-
-- https://medium.com/swlh/predicting-sneaker-resell-with-deep-learning-d3a78b144099
-- https://repository.asu.edu/items/52272
-- https://medium.com/swlh/predicting-stockx-sneaker-prices-with-machine-learning-ec9cb625bec0 * This link contains data about StockX already
-
 <h2>Methods to combine all info</h2>
 
 - Find the average price of the sneaker for a certain period of time e.g. a month
@@ -57,3 +51,9 @@ A program which will predict of prices of reselling sneakers in the future. It w
 
 Linear regression model : https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
 Lasso linear model : https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html
+
+<h2>Links to others who created sneaker price predictors</h2>
+
+- https://medium.com/swlh/predicting-sneaker-resell-with-deep-learning-d3a78b144099
+- https://repository.asu.edu/items/52272
+- https://medium.com/swlh/predicting-stockx-sneaker-prices-with-machine-learning-ec9cb625bec0 * This link contains data about StockX already
