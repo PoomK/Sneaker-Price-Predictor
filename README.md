@@ -42,3 +42,18 @@ A program which will predict of prices of reselling sneakers in the future. It w
 - https://medium.com/swlh/predicting-sneaker-resell-with-deep-learning-d3a78b144099
 - https://repository.asu.edu/items/52272
 - https://medium.com/swlh/predicting-stockx-sneaker-prices-with-machine-learning-ec9cb625bec0 * This link contains data about StockX already
+
+<h2>Methods to combine all info</h2>
+
+- Find the average price of the sneaker for a certain period of time e.g. a month
+- Store to a file, maybe a csv file and use panda
+- Store the numpy arrays for the names of the sneaker in columns with the header as the specific name e.g. one header will be called "adidas" while others called "yeezy" etc.
+- Store a column for the size of the sneaker (maybe)
+- Use sklearn linear regression to find coefficients and predict price.
+- Loop through all and find the score for each prediction
+- Change parameters to make it the best model
+
+<h4>Links to resources</h4>
+
+Linear regression model : https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
+Lasso linear model : https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html
