@@ -5,6 +5,7 @@ Jordan1MochaArr = ["Air", "Jordan 1 Retro High", "Dark", "Mocha"]
 
 def GetSneakerNameArray():
 
+    #Reads the first line from this text file
     with open("SneakerNameArr.csv", mode="r") as f:
         reader = csv.reader(f)
         row1 = next(reader)
