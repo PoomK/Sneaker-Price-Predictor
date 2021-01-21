@@ -39,7 +39,7 @@ A program which will predict of prices of reselling sneakers in the future. It w
 
 <h2>Methods to combine all info</h2>
 
-- Find the average price of the sneaker for a certain period of time e.g. a month
+- Find the average price of the sneaker for a certain period of time e.g. a month or maybe all prices after release date
 - Store to a file, maybe a csv file and use panda
 - Store the numpy arrays for the names of the sneaker in columns with the header as the specific name e.g. one header will be called "adidas" while others called "yeezy" etc.
 - Store a column for the size of the sneaker (maybe)
