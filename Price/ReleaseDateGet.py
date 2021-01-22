@@ -18,10 +18,14 @@ PopUpQuitButton = driver.find_element_by_xpath("//img[@src='//stockx-assets.imgi
 #Click on the first sneaker
 SneakerSelect = driver.find_element_by_xpath("//div[@class='tile browse-tile updated'][1]").click()
 
-#Get the release date and its timestamp
-ReleaseDateStr = driver.find_element_by_xpath("//span[@data-testid='product-detail-release date']").text
-print(ReleaseDateStr)
-RDDateTimeObj = datetime.strptime(ReleaseDateStr, "%d/%m/%Y")
-print(RDDateTimeObj)
-RDTTimeStamp = RDDateTimeObj.timestamp()
-print(RDTTimeStamp)
+def get_release_date():
+    #Get the release date and its timestamp
+    ReleaseDateStr = driver.find_element_by_xpath("//span[@data-testid='product-detail-release date']").text
+    print(ReleaseDateStr)
+    RDDateTimeObj = datetime.strptime(ReleaseDateStr, "%d/%m/%Y")
+    print(RDDateTimeObj)
+    RDTTimeStamp = RDDateTimeObj.timestamp()
+    print(RDTTimeStamp)
+    return RDTTimeStamp
+
+ReleaseDateTS = get_release_date()
